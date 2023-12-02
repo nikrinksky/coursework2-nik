@@ -5,16 +5,16 @@ import org.springframework.stereotype.Service;
 import pro.sky.coursework2nik.entity.Question;
 import pro.sky.coursework2nik.repository.QuestionRepository;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Random;
 
 @Service
-public class JavaQuestionService implements QuestionService {
-
-    //private final Collection<Question> questions = new HashSet<>();
+public class MathQuestionService implements QuestionService {
 
     private final QuestionRepository questionRepository;
 
-    public JavaQuestionService(@Qualifier("javaQuestionRepository") QuestionRepository questionRepository) {
+    public MathQuestionService(@Qualifier("mathQuestionRepository") QuestionRepository questionRepository) {
         this.questionRepository = questionRepository;
     }
 
